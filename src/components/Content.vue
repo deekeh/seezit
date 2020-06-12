@@ -1,12 +1,12 @@
 <template>
-  <div>
-      About page
+  <div class="container-fluid">
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
 export default {
-    name: 'About'
+  name: 'Content'
 }
 </script>
 
