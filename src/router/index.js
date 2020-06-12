@@ -7,14 +7,17 @@ export default new VueRouter({
   routes: [
     {
       path: "/",
+      name: 'Home',
       component: import('../components/Content')
     },
     {
       path: "/about",
+      name: "About",
       component: import("../views/About")
     },
     {
       path: "/contact",
+      name: "Contact",
       component: import("../views/Contact")
     }
   ]
