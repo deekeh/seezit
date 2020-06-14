@@ -2,23 +2,27 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 Vue.use(VueRouter);
 
+import Home from '../views/Home'
+import About from '../views/About'
+import Contact from '../views/Contact'
+
 export default new VueRouter({
   mode: 'history',
   routes: [
     {
       path: "/",
       name: 'Home',
-      component: import('../components/Content')
+      component: Home
     },
     {
       path: "/about",
       name: "About",
-      component: import("../views/About")
+      component: About
     },
     {
       path: "/contact",
       name: "Contact",
-      component: import("../views/Contact")
+      component: Contact
     }
   ]
 });
